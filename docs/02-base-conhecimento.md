@@ -37,6 +37,25 @@ Os arquivos CSV e JSON da pasta data são carregados pela aplicação e disponib
 
 Os dados são organizados por cliente, permitindo que o agente consulte as informações relevantes de acordo com a solicitação realizada.
 
+Existem duas possibilidades: injetar os dados diretamente no prompt (Ctrl + C | Ctrl + v) ou carregar o arquivo via código, conforme o exemplo abaixo:
+
+```
+import pandas as pd
+import json
+
+# CSV
+historico = pd.read_csv("data/historico_atendimento.csv")
+transacoes = pd.read_csv("data/transacoes.csv")
+
+# JSON
+with open("data/perfil_investidor.json", "r", encoding="utf-8") as f:
+    perfil = json.load(f)
+
+with open("data/produtos_financeiros.json", "r", encoding="utf-8") as f:
+    produtos = json.load(f)
+
+```
+
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
