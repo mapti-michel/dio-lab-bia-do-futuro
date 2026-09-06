@@ -40,19 +40,15 @@ Os dados são organizados por cliente, permitindo que o agente consulte as infor
 Existem duas possibilidades: injetar os dados diretamente no prompt (Ctrl + C | Ctrl + v) ou carregar o arquivo via código, conforme o exemplo abaixo:
 
 ```
+import json
+import pandas as pd
+
+# ************* CARREGAR DADOS *****************
+perfil = json.load(open("./data/perfil investidor.json"))transacoes = pd.read_csv(open("./data/transacoes.csv"))
+historico = pd.read_csv(open("./data/historico_atendimento.csv"))
+produtos = json.load(open("./data/produtos_financeiros.json"))
 import pandas as pd
 import json
-
-# CSV
-historico = pd.read_csv("data/historico_atendimento.csv")
-transacoes = pd.read_csv("data/transacoes.csv")
-
-# JSON
-with open("data/perfil_investidor.json", "r", encoding="utf-8") as f:
-    perfil = json.load(f)
-
-with open("data/produtos_financeiros.json", "r", encoding="utf-8") as f:
-    produtos = json.load(f)
 
 ```
 
