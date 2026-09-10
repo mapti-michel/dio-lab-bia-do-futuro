@@ -94,7 +94,9 @@ PERGUNTA:
         }
     )
 
-    r.raise_for_status()
+    if not r.ok:
+        st.error(f"Erro {r.status_code}: {r.text}")
+        return
 
     return r.json()["response"]
 
