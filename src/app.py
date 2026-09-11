@@ -6,7 +6,8 @@ import streamlit as st
 # ************* CONFIGURAÇÃO *****************
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODELO = "gpt-oss"
+#MODELO = "qwen3:1.7b" # Realizado para teste no terminal
+MODELO = "gpt-oss" # oficial
 
 
 # ************* CARREGAR DADOS *****************
