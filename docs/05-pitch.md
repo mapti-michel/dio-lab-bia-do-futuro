@@ -55,6 +55,4 @@ O impacto esperado é facilitar o acesso a informações financeiras de forma ma
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+https://drive.google.com/file/d/1vhvOgA95zsEMRvLy8pnD20-UDxoF6bd1/view?usp=drive_link
